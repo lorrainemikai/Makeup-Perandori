@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LoginActivity">
+    <ImageView
+    android:id="@+id/imageView"
+    android:layout_width="472dp"
+    android:layout_height="603dp"
+    android:scaleType="centerCrop"
+    app:srcCompat="@drawable/login"
+     />
+
+    <TextView
+
+        android:layout_width="181dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="89dp"
+        android:text="Make Up Perandori"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/emailEditTextView"
+        android:layout_width="234dp"
+        android:layout_height="42dp"
+        android:hint="Enter Email"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="156dp" />
+
+    <EditText
+        android:id="@+id/passwordEditTextView"
+        android:layout_width="236dp"
+        android:layout_height="46dp"
+        android:hint="Enter Password"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/nameEditTextView"
+        android:layout_marginTop="207dp"
+        android:layout_alignLeft="@+id/nameEditTextView" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="122dp"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="135dp"
+        android:layout_toEndOf="@+id/passwordEditTextView"
+        android:backgroundTint="#c36891"
+        android:text="LOG IN "
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="327dp"
+        android:layout_toRightOf="@+id/passwordEditTextView" />
+
+    <TextView
+        android:id="@+id/signupTextView"
+        android:layout_width="229dp"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="206dp"
+        android:layout_marginStart="50dp"
+        android:text="Dont have an account? Sign Up Here"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="394dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp" />
+
+</RelativeLayout>

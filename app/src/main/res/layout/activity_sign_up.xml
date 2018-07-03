@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignUpActivity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="472dp"
+        android:layout_height="603dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/signin"
+        />
+
+    <EditText
+        android:id="@+id/userNameEditTextView"
+        android:layout_width="234dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="129dp"
+        android:hint="Enter Full Names" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="236dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:hint="Enter Email" />
+
+    <EditText
+        android:id="@+id/firstPasswordEditText"
+        android:layout_width="236dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:hint="enter password" />
+
+    <EditText
+        android:id="@+id/secondPasswordEditText"
+        android:layout_width="236dp"
+        android:layout_height="46dp"
+        android:layout_above="@+id/loginTextView"
+        android:layout_alignParentStart="true"
+        android:hint="enter password again" />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="122dp"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="86dp"
+        android:layout_toEndOf="@+id/userNameEditTextView"
+        android:backgroundTint="#c36891"
+        android:text="SIGN UP "
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="327dp" />
+
+    <TextView
+        android:id="@+id/loginTextView"
+        android:layout_width="229dp"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="159dp"
+        android:layout_marginStart="62dp"
+        android:text="Already have an account?Log in here."
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="394dp" />
+
+</RelativeLayout>
