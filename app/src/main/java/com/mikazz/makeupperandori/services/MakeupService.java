@@ -43,18 +43,18 @@ public class MakeupService {
         Call call = client.newCall(request);
         call.enqueue(callback);
     }
+
     public static List<Makeup> processResults(Response response) {
         List<Makeup> result = new ArrayList<>();
 
         try {
             String jsonData = response.body().string();
-            JSONObject makeupJSON = new JSONObject(jsonData);
-            JSONArray myMakeupJson = makeupJSON.getJSONArray("milani");
+            JSONArray makeupJSON = new JSONArray(jsonData);
             if (response.isSuccessful()) {
-                Log.v(TAG, myMakeupJson.toString());
+                Log.v(TAG, makeupJSON.toString());
                 Type collectionType = new TypeToken<List<Makeup>>() {}.getType();
                 Gson gson = new GsonBuilder().create();
-                result = gson.fromJson(myMakeupJson.toString(), collectionType);
+                result = gson.fromJson(makeupJSON.toString(), collectionType);
             }
         } catch (JSONException | NullPointerException | IOException e) {
             e.printStackTrace();

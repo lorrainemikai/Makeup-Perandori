@@ -21,7 +21,7 @@ public class Makeup {
     private String price;
     @SerializedName("price_sign")
     @Expose
-    private Object priceSign;
+    private transient Object priceSign;
     @SerializedName("currency")
     @Expose
     private Object currency;
@@ -39,10 +39,10 @@ public class Makeup {
     private String description;
     @SerializedName("rating")
     @Expose
-    private Integer rating;
+    private Double rating;
     @SerializedName("category")
     @Expose
-    private Object category;
+    private transient Object category;
     @SerializedName("product_type")
     @Expose
     private String productType;
@@ -94,7 +94,7 @@ public class Makeup {
      * @param rating
      * @param productLink
      */
-    public Makeup(Integer id, String brand, String name, String price, Object priceSign, Object currency, String imageLink, String productLink, String websiteLink, String description, Integer rating, Object category, String productType, List<String> tagList, String createdAt, String updatedAt, String productApiUrl, String apiFeaturedImage, List<ProductColor> productColors) {
+    public Makeup(Integer id, String brand, String name, String price, Object priceSign, Object currency, String imageLink, String productLink, String websiteLink, String description, Double rating, Object category, String productType, List<String> tagList, String createdAt, String updatedAt, String productApiUrl, String apiFeaturedImage, List<ProductColor> productColors) {
         super();
         this.id = id;
         this.brand = brand;
@@ -117,7 +117,7 @@ public class Makeup {
         this.productColors = productColors;
     }
 
-    public Integer getId() {
+    public Integer getId()   {
         return id;
     }
 
@@ -197,11 +197,11 @@ public class Makeup {
         this.description = description;
     }
 
-    public Integer getRating() {
+    public Double getRating() {
         return rating;
     }
 
-    public void setRating(Integer rating) {
+    public void setRating(Double rating) {
         this.rating = rating;
     }
 

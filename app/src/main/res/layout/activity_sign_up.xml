@@ -5,56 +5,67 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".SignUpActivity">
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="472dp"
         android:layout_height="603dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/signin"
-        />
+        app:srcCompat="@drawable/signin" />
 
     <EditText
         android:id="@+id/userNameEditTextView"
         android:layout_width="234dp"
         android:layout_height="42dp"
+        android:layout_above="@+id/emailEditText"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="83dp"
-        android:hint="Enter Full Names" />
+        android:hint="Enter Full Names"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
 
     <EditText
         android:id="@+id/emailEditText"
         android:layout_width="236dp"
         android:layout_height="46dp"
+        android:layout_above="@+id/firstPasswordEditText"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/userNameEditTextView"
-        android:hint="Enter Email" />
+        android:hint="Enter Email"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
 
     <EditText
         android:id="@+id/firstPasswordEditText"
         android:layout_width="236dp"
         android:layout_height="46dp"
-        android:inputType="textPassword"
+        android:layout_above="@+id/secondPasswordEditText"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/emailEditText"
-        android:hint="enter password" />
+        android:layout_marginBottom="-229dp"
+        android:hint="enter password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
 
     <EditText
         android:id="@+id/secondPasswordEditText"
         android:layout_width="236dp"
         android:layout_height="46dp"
-        android:inputType="textPassword"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/firstPasswordEditText"
-        android:hint="enter password again" />
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="229dp"
+        android:hint="enter password again"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
 
     <Button
         android:id="@+id/signupButton"
         android:layout_width="122dp"
         android:layout_height="52dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="103dp"
-        android:layout_toEndOf="@+id/emailEditText"
+        android:layout_marginBottom="114dp"
+        android:layout_toEndOf="@+id/loginTextView"
         android:backgroundTint="#c36891"
         android:text="SIGN UP "
         tools:layout_editor_absoluteX="196dp"
@@ -62,14 +73,25 @@
 
     <TextView
         android:id="@+id/loginTextView"
-        android:layout_width="229dp"
-        android:layout_height="24dp"
+        android:layout_width="144dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="188dp"
-        android:layout_marginStart="62dp"
-        android:text="Already have an account?Log in here."
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="394dp" />
+        android:layout_marginBottom="201dp"
+        android:text="Already have an account?Log in"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/heading"
+        android:text="Makeup Perandori"
+        android:textSize="40dp"
+        android:textColor="@color/colorPrimaryDark"/>
 
 </RelativeLayout>
